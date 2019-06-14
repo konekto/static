@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "@konekto/bundle": "^5.3.0",
+    "@konekto/bundle": "^5.5.1",
     "@konekto/preset-react": "^1.0.3",
     "@konekto/reenact": "^2.0.0",
     "browser-sync": "^2.26.7",
@@ -19,6 +19,7 @@
     "glob": "^7.1.4",
     "react": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-hot-loader": "^4.11.0",
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0"
   },
