@@ -18,7 +18,7 @@ describe('static', function () {
     await remove(dest)
   })
 
-  it('should build files', async () => {
+  it.only('should build files', async () => {
 
     await static({ src, dest });
 
@@ -33,7 +33,7 @@ describe('static', function () {
     const $ = cheerio.load(await readFile(indexHtmlPath));
     assert.equal($('#root').length, 1);
     assert.equal($('title').text(), 'Hi');
-    assert.equal($('meta[name="description"]').attr('content'), 'index page');
+    assert.equal($('meta[name="description"]').attr('content'), 'start page');
     assert.equal($('h1').text(), 'Hello World!');
 
     const css = await readFile(indexCssPath);
@@ -43,7 +43,7 @@ describe('static', function () {
     assert(/hydrate/.test(js));
   })
 
-  it.only('should serve pages', async () => {
+  it('should serve pages', async () => {
 
     await static({ src, dest, serve: true });
   })

@@ -13,7 +13,7 @@
     "@babel/register": "^7.4.4",
     "@konekto/bundle": "^5.5.1",
     "@konekto/preset-react": "^1.0.3",
-    "@konekto/reenact": "^2.0.0",
+    "@konekto/reenact": "^2.1.0",
     "browser-sync": "^2.26.7",
     "fs-extra": "^8.0.1",
     "glob": "^7.1.4",

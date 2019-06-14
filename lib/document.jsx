@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 export function collectStatic() {
   const helmet = Helmet.renderStatic();
-
   return {
     htmlAttributes: helmet.htmlAttributes.toString(),
     title: helmet.title.toString(),
