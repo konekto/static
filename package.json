@@ -2,7 +2,7 @@
   "name": "static",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "index.js",
   "bin": {
     "static": "bin/index.js"
   },
@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
   }
 }

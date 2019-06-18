@@ -3,9 +3,10 @@ const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
 const { remove } = require('fs-extra');
+const request = require('request-promise');
 const { existsSync } = fs;
 const { readFile } = fs.promises;
-const static = require('../lib/index');
+const static = require('../index');
 
 const src = path.resolve(__dirname, 'src/pages');
 const dest = path.resolve(__dirname, 'build/pages');
@@ -18,7 +19,7 @@ describe('static', function () {
     await remove(dest)
   })
 
-  it.only('should build files', async () => {
+  it('should build files', async () => {
 
     await static({ src, dest });
 
@@ -45,7 +46,21 @@ describe('static', function () {
 
   it('should serve pages', async () => {
 
-    await static({ src, dest, serve: true });
+    let html, $;
+
+    const server = await static({ src, dest, serve: true });
+
+    html = await request('http://localhost:3010');
+    $ = cheerio.load(html);
+    assert.equal($('title').text(), 'Hi');
+    assert.equal($('h1').text(), 'Hello World!');
+
+    html = await request('http://localhost:3010/subpage');
+    $ = cheerio.load(html);
+    assert.equal($('title').text(), 'Subpage');
+    assert.equal($('h1').text(), 'Subpage');
+
+    server.exit();
   })
 
 })
