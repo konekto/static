@@ -2,6 +2,7 @@
   "name": "@konekto/static",
   "version": "1.0.0",
   "description": "A static site generator based on bundle and reenact",
+  "homepage": "https://github.com/konekto/static",
   "main": "index.js",
   "bin": {
     "static": "bin/index.js"
@@ -9,6 +10,10 @@
   "scripts": {
     "test": "mocha",
     "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:konekto/static.git"
   },
   "author": "Haithem Bel Haj <haithem@konekto>",
   "license": "ISC",
