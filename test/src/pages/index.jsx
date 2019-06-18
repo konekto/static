@@ -1,6 +1,6 @@
 import { hot } from 'react-hot-loader';
 import React from 'react';
-import { Title, Meta } from '../../../lib/document.jsx';
+import { Title, Meta } from '../../../document';
 
 export default hot(module)(App);
 

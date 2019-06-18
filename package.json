@@ -7,30 +7,32 @@
     "static": "bin/index.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/register": "^7.4.4",
     "@konekto/bundle": "^5.5.1",
-    "@konekto/preset-react": "^1.0.3",
     "@konekto/reenact": "^2.1.0",
     "browser-sync": "^2.26.7",
     "fs-extra": "^8.0.1",
     "glob": "^7.1.4",
-    "react": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-hot-loader": "^4.11.0",
     "sade": "^1.5.1",
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
+    "babel-loader": "^8.0.6",
     "cheerio": "^1.0.0-rc.3",
     "mocha": "^6.1.4",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "@konekto/preset-react": "^1.0.3",
+    "react": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-hot-loader": "^4.11.0"
   }
 }
