@@ -1,7 +1,7 @@
 {
-  "name": "static",
+  "name": "@konekto/static",
   "version": "1.0.0",
-  "description": "",
+  "description": "A static site generator based on bundle and reenact",
   "main": "index.js",
   "bin": {
     "static": "bin/index.js"
@@ -10,7 +10,7 @@
     "test": "mocha",
     "build": "webpack"
   },
-  "author": "",
+  "author": "Haithem Bel Haj <haithem@konekto>",
   "license": "ISC",
   "dependencies": {
     "@konekto/bundle": "^5.5.1",
