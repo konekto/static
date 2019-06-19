@@ -6,9 +6,8 @@ export default hot(module)(App);
 
 function App() {
   return <div>
-    <Title>Hi</Title>
-    <Meta name="description" content="start page" />
-    <h1>Hello World!</h1>
-    <a href="/subpage">subpage</a>
+    <Title>Subpage</Title>
+    <Meta name="description" content="index page" />
+    <h1>Subpage</h1>
   </div>;
 }

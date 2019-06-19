@@ -8,8 +8,8 @@ const { existsSync } = fs;
 const { readFile } = fs.promises;
 const static = require('../index');
 
-const src = path.resolve(__dirname, 'src/pages');
-const dest = path.resolve(__dirname, 'build/pages');
+const src = path.resolve(__dirname, '../example/pages');
+const dest = path.resolve(__dirname, 'build');
 
 describe('static', function () {
 

@@ -13,6 +13,9 @@ Then build the site using `static build <src> <dest>`.
 - `client.jsx`: will be the bundled `client.js`
 - `styles.styl`: will automatically be loader and compiled to `client.css` 
 
+See the example folder for a better idea of how the page are structured.
+Run `static serve example\pages build` to see the example in action.
+
 ## Document Head
 
 For the document head `static` provides a React library based on `react-helmet`.
