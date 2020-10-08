@@ -18,9 +18,9 @@
   "author": "Haithem Bel Haj <haithem@konekto>",
   "license": "ISC",
   "dependencies": {
-    "@konekto/bundle": "^5.5.1",
+    "@konekto/bundle": "^5.7.0",
     "@konekto/reenact": "^2.1.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "fs-extra": "^8.0.1",
     "glob": "^7.1.4",
     "sade": "^1.5.1",
@@ -28,16 +28,16 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
+    "@konekto/preset-react": "^1.2.0",
     "babel-loader": "^8.0.6",
     "cheerio": "^1.0.0-rc.3",
-    "mocha": "^6.1.4",
+    "mocha": "^8.1.3",
+    "react": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-hot-loader": "^4.11.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4",
-    "@konekto/preset-react": "^1.0.3",
-    "react": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-hot-loader": "^4.11.0"
+    "webpack-cli": "^3.3.12"
   }
 }
